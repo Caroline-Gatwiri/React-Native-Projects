@@ -47,7 +47,7 @@ async updateNote(id, text){
     if(response?.error){
         return{ error: response.error}
     }
-    return {date: response};
+    return {data: response};
 },
     //Delete note
     async deleteNote(id){
